@@ -12,8 +12,9 @@ function renderSymbols() {
 	var forum = "";
 	for (var i=0; i<split.length; i++) {
 		for (var j=0; j<split[i].length; j++) {
-			html += '<img src="http://oranchak.com/zodiac/webtoy/alphabet/' + (dark ? 'darker/' : '') + getName(split[i].charAt(j), true) + '.jpg">';
-			forum += '[img]http://oranchak.com/zodiac/webtoy/alphabet/' + (dark ? 'darker/' : '') + getName(split[i].charAt(j), true) + '.jpg[/img]';
+			html += '<img src="https://zodiackillerciphers.com/typewriter/images/symbols/' + (dark ? 'darker/' : 'lighter/') + getName(split[i].charAt(j), true) + '.jpg">';
+			forum += '[img]https://zodiackillerciphers.com/typewriter/images/symbols/' + (dark ? 'darker/' : 'lighter/') + getName(split[i].charAt(j), true) + '.jpg[/img]';
+			// forum += '[img]http://oranchak.com/zodiac/webtoy/alphabet/' + (dark ? 'darker/' : '') + getName(split[i].charAt(j), true) + '.jpg[/img]';
 		}
 		if (i<split.length-1) {
 			html += "<br>";
